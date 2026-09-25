@@ -1,0 +1,152 @@
+<html >
+<head>
+  <title>Winne International Engineering College</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.5;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Header & Branding */
+    header {
+      background-color: #ffffff;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .brand-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1.25rem 1rem 0.75rem;
+    }
+
+    .logo {
+      height: 50px; /* Adjust height as needed */
+      width: auto;
+      object-fit: contain;
+    }
+
+    .header-title {
+      color: #0044cc;
+      font-size: 1.75rem;
+      letter-spacing: 0.5px;
+    }
+
+    /* Navigation Bar */
+    .navbar {
+      background-color: #1a252f;
+    }
+
+    .nav-list {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    .nav-list li a {
+      display: block;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 0.85rem 1.5rem;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+    .nav-list li a:hover,
+    .nav-list li a.active {
+      background-color: #0044cc;
+      color: #ffffff;
+    }
+
+    /* Main Content */
+    main {
+      flex: 1;
+    }
+
+    .hero-image {
+      width: 100%;
+      height: auto;
+      max-height: 480px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Footer */
+    .footer-winne {
+      background-color: #111111;
+      color: #ffffff;
+      padding: 1.25rem;
+      text-align: center;
+    }
+
+    .footer-winnie p {
+      font-size: 0.9rem;
+    }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 600px) {
+      .brand-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+      }
+
+      .nav-list {
+        flex-direction: column;
+      }
+      
+      .nav-list li a {
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        padding: 0.75rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="brand-container">
+      <a href="#home">
+        <img class="logo" src="images/Drandom.png.png" alt="winne International Engineering College Logo">
+      </a>
+      <h1 class="header-title">WINNE INTERNATIONAL ENGINEERING COLLEGE</h1>
+    </div>
+    
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#academics">Academics</a></li>
+        <li><a href="#admissions">Admissions</a></li>
+        <li><a href="#departments">Departments</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <img class="hero-image" src="./images/college.jpg.jpg" alt="winnie International Engineering College Campus">
+  </main>
+
+  <footer class="footer-winne">
+    <p>&copy; 2026 Winne. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
