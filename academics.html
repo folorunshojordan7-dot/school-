@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics | Winne International Engineering College</title>
+    <style>
+        /* Base Reset & Typography */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333333;
+            line-height: 1.6;
+        }
+
+        /* Top Brand Header */
+        .brand-header {
+            background-color: #ffffff;
+            padding: 15px 50px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .logo-placeholder {
+            font-weight: 900;
+            font-size: 24px;
+            color: #1a252f;
+            margin-right: 15px;
+            border: 2px solid #1a252f;
+            padding: 2px 8px;
+            text-transform: uppercase;
+        }
+
+        .college-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: #0275d8;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #111c24;
+            display: flex;
+            padding-left: 50px;
+        }
+
+        .navbar a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 14px 24px;
+            font-size: 15px;
+            font-weight: 600;
+            transition: background-color 0.2s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #1c2d3a;
+        }
+
+        /* Active State matching user selection */
+        .navbar a.active {
+            background-color: #0275d8;
+        }
+
+        /* Main Content Structure */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .page-title {
+            font-size: 32px;
+            color: #111c24;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #0275d8;
+            padding-bottom: 10px;
+        }
+
+        .intro-text {
+            font-size: 17px;
+            color: #555555;
+            margin-bottom: 40px;
+        }
+
+        /* Academic Programs Layout Grid */
+        .program-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .program-card {
+            background: #ffffff;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-top: 4px solid #0275d8;
+            padding: 25px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .program-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        }
+
+        .program-card h3 {
+            color: #111c24;
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+
+        .program-card p {
+            color: #666666;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .learn-more-btn {
+            display: inline-block;
+            color: #0275d8;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .learn-more-btn:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111c24;
+            color: #a0aab2;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <header class="brand-header">
+        <div class="logo-placeholder">R</div>
+        <h1 class="college-title">Winne International Engineering College</h1>
+    </header>
+
+   
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="academics.html" class="active">Academics</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="departments.html">Departments</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+   
+    <main class="container">
+        <h2 class="page-title">Academic Programs</h2>
+        <p class="intro-text">At Winne International Engineering College, we offer rigorous, industry-aligned engineering curriculums designed to cultivate innovation, technical mastery, and future garri makers.</p>
+
+        <div class="program-grid">
+      
+            <div class="program-card">
+                <h3>Undergraduate (B.Tech / B.S.)</h3>
+                <p>up to a four-year teaching about the properites of the holy flakes.</p>
+                <a href="#" class="learn-more-btn">View Requirements &rarr;</a>
+            </div>
+
+
+            <div class="program-card">
+                <h3>Graduate Studies (G.m.s / G.tech)</h3>
+                <p>Advanced specail garri maing techniques.</p>
+                <a href="#" class="learn-more-btn">Explore Specializations &rarr;</a>
+            </div>
+
+            <div class="program-card">
+                <h3>Doctoral Programs (Ph.D.)</h3>
+                <p>Intense garri making teaches and experienced garri manufacturer mentors.</p>
+                <a href="#" class="learn-more-btn">Research Areas &rarr;</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2026 Winne International Engineering College. All Rights Reserved.
+    </footer>
+
+</body>
+</html>

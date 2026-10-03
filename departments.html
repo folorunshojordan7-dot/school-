@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departments | Winne International Engineering College</title>
+    <style>
+        /* Base Reset & Typography */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Top Brand Header */
+        .brand-header {
+            background-color: #ffffff;
+            padding: 15px 50px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .logo-placeholder {
+            font-weight: 900;
+            font-size: 24px;
+            color: #1a252f;
+            margin-right: 15px;
+            border: 2px solid #1a252f;
+            padding: 2px 8px;
+            text-transform: uppercase;
+        }
+
+        .college-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: #0275d8;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        /* Navigation Bar */
+        .nav-container {
+            display: flex;
+            background-color: #111c24;
+            list-style: none;
+            padding-left: 50px;
+        }
+
+        .nav-container a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 14px 24px;
+            font-size: 15px;
+            font-weight: 600;
+            display: inline-block;
+            transition: background-color 0.2s ease;
+        }
+
+        .nav-container a:hover {
+            background-color: #1c2d3a;
+        }
+
+        /* Active State matching user selection */
+        .nav-container a.active {
+            background-color: #0275d8;
+        }
+
+        /* Main Content Structure */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            flex: 1;
+        }
+
+        .page-title {
+            font-size: 32px;
+            color: #111c24;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #0275d8;
+            padding-bottom: 10px;
+        }
+
+        .intro-text {
+            font-size: 17px;
+            color: #555555;
+            margin-bottom: 40px;
+        }
+
+        /* Grid Layout for Departments */
+        .dept-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .dept-card {
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            padding: 25px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .dept-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-color: #0275d8;
+        }
+
+        .dept-card h3 {
+            color: #111c24;
+            font-size: 20px;
+            margin-bottom: 10px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #eef0f2;
+        }
+
+        .dept-card p {
+            color: #666666;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .dept-link {
+            color: #0275d8;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .dept-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer matching the homepage footer */
+        footer {
+            background-color: #111c24;
+            color: #a0aab2;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+   
+    <header class="brand-header">
+        <div class="logo-placeholder">R</div>
+        <h1 class="college-title">Winne International Engineering College</h1>
+    </header>
+
+    
+    <nav>
+        <ul class="nav-container">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="departments.html" class="active">Departments</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    
+    <main class="container">
+        <h2 class="page-title">Our Academic Departments</h2>
+        <p class="intro-text">Explore our specialized engineering departments, each offering state-of-the-art laboratory infrastructure, expert faculty guidance, and breakthrough industrial research opportunities.</p>
+
+        <div class="dept-grid">
+          
+            <div class="dept-card">
+                <h3>Computer Science & Engineering</h3>
+                <p>Focuses on software systems, artificial intelligence, cybersecurity, cloud networks, and cutting-edge computational algorithms.</p>
+                <a href="#" class="dept-link">View Department details &rarr;</a>
+            </div>
+
+        
+            <div class="dept-card">
+                <h3>Mechanical Engineering</h3>
+                <p>Covers advanced robotics, thermodynamic systems, manufacturing automation, fluid mechanics, and materials engineering science.</p>
+                <a href="#" class="dept-link">View Department details &rarr;</a>
+            </div>
+
+            
+            <div class="dept-card">
+                <h3>Civil & Environmental Engineering</h3>
+                <p>Specializes in modern structural designs, sustainable architecture, transportation networks, and green infrastructure solutions.</p>
+                <a href="#" class="dept-link">View Department details &rarr;</a>
+            </div>
+
+           
+            <div class="dept-card">
+                <h3>Electrical & Electronic Engineering</h3>
+                <p>Explores renewable energy grids, smart power distribution, embedded microelectronics, and advanced communication frameworks.</p>
+                <a href="#" class="dept-link">View Department details &rarr;</a>
+            </div>
+        </div>
+    </main>
+
+    
+    <footer>
+        &copy; 2026 Winne. All rights reserved.
+    </footer>
+
+</body>
+</html>

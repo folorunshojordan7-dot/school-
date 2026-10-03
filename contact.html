@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Winne International Engineering College</title>
+    <style>
+        /* Base Reset & Typography */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Top Brand Header */
+        .brand-header {
+            background-color: #ffffff;
+            padding: 15px 50px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .logo-placeholder {
+            font-weight: 900;
+            font-size: 24px;
+            color: #1a252f;
+            margin-right: 15px;
+            border: 2px solid #1a252f;
+            padding: 2px 8px;
+            text-transform: uppercase;
+        }
+
+        .college-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: #0275d8;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        /* Navigation Bar */
+        .nav-container {
+            display: flex;
+            background-color: #111c24;
+            list-style: none;
+            padding-left: 50px;
+        }
+
+        .nav-container a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 14px 24px;
+            font-size: 15px;
+            font-weight: 600;
+            display: inline-block;
+            transition: background-color 0.2s ease;
+        }
+
+        .nav-container a:hover {
+            background-color: #1c2d3a;
+        }
+
+        /* Active State matching user selection */
+        .nav-container a.active {
+            background-color: #0275d8;
+        }
+
+        /* Main Content Structure */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+            flex: 1;
+        }
+
+        .page-title {
+            font-size: 32px;
+            color: #111c24;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #0275d8;
+            padding-bottom: 10px;
+        }
+
+        .intro-text {
+            font-size: 17px;
+            color: #555555;
+            margin-bottom: 40px;
+        }
+
+        /* Two-Column Grid Setup */
+        .contact-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            margin-bottom: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .contact-layout {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+
+        /* Contact Form Styles */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #111c24;
+            font-size: 14px;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            font-size: 15px;
+            background-color: #ffffff;
+            transition: border-color 0.2s;
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: #0275d8;
+        }
+
+        .submit-btn {
+            background-color: #0275d8;
+            color: #ffffff;
+            border: none;
+            padding: 12px 30px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .submit-btn:hover {
+            background-color: #015bb0;
+        }
+
+        /* Contact Info Column Styles */
+        .info-section h3 {
+            color: #111c24;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .info-block {
+            margin-bottom: 25px;
+        }
+
+        .info-block p {
+            font-size: 15px;
+            color: #555555;
+            margin-bottom: 5px;
+        }
+
+        .info-block strong {
+            color: #111c24;
+        }
+
+        /* Footer matching the homepage footer */
+        footer {
+            background-color: #111c24;
+            color: #a0aab2;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+   
+    <header class="brand-header">
+        <div class="logo-placeholder">R</div>
+        <h1 class="college-title">Winne International Engineering College</h1>
+    </header>
+
+    <!-- Navigation Menu with Contact Us Set to Active -->
+    <nav>
+        <ul class="nav-container">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
+        </ul>
+    </nav>
+
+ 
+    <main class="container">
+        <h2 class="page-title">Contact Us</h2>
+        <p class="intro-text">Have questions about applications, campus life, or engineering specialties? Get in touch with our administrative offices today.</p>
+
+        <div class="contact-layout">
+            <!-- Left Side: Interactive Contact Form -->
+            <section class="form-section">
+                <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Message simulation sent successfully!');">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" required placeholder="Enter your full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" required placeholder="What is your inquiry about?">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" required placeholder="Type your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </section>
+
+         
+            <aside class="info-section">
+                <h3>Campus Coordinates</h3>
+                
+                <div class="info-block">
+                    <p><strong>Main Address:</strong></p>
+                    <p>Winne Campus Facility Grounds,</p>
+                    <p>Engineering Way, Suite 101</p>
+                </div>
+
+                <div class="info-block">
+                    <p><strong>General Admissions Office:</strong></p>
+                    <p>Phone: +1 (555) 019-2834</p>
+                    <p>Email: admissions@winneengineering.edu</p>
+                </div>
+
+                <div class="info-block">
+                    <p><strong>Operating Hours:</strong></p>
+                    <p>Monday – Friday: 8:00 AM – 5:00 PM</p>
+                    <p>Saturday & Sunday: Closed</p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+   
+    <footer>
+        &copy; 2026 Winne. All rights reserved.
+    </footer>
+
+</body>
+</html>

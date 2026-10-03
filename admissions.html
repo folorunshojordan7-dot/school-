@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions | Winne International Engineering College</title>
+    <style>
+        /* Base Reset & Typography */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Top Brand Header */
+        .brand-header {
+            background-color: #ffffff;
+            padding: 15px 50px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .logo-placeholder {
+            font-weight: 900;
+            font-size: 24px;
+            color: #1a252f;
+            margin-right: 15px;
+            border: 2px solid #1a252f;
+            padding: 2px 8px;
+            text-transform: uppercase;
+        }
+
+        .college-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: #0275d8;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #111c24;
+            display: flex;
+            padding-left: 50px;
+        }
+
+        .navbar a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 14px 24px;
+            font-size: 15px;
+            font-weight: 600;
+            transition: background-color 0.2s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #1c2d3a;
+        }
+
+        /* Active State matching user selection */
+        .navbar a.active {
+            background-color: #0275d8;
+        }
+
+        /* Main Content Structure */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+            flex: 1;
+        }
+
+        .page-title {
+            font-size: 32px;
+            color: #111c24;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #0275d8;
+            padding-bottom: 10px;
+        }
+
+        .intro-text {
+            font-size: 17px;
+            color: #555555;
+            margin-bottom: 40px;
+        }
+
+        /* Two-Column Layout for Requirements & Process */
+        .admissions-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .admissions-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .main-info h3, .sidebar-info h3 {
+            color: #111c24;
+            font-size: 22px;
+            margin-bottom: 15px;
+            margin-top: 25px;
+        }
+
+        .main-info h3:first-child {
+            margin-top: 0;
+        }
+
+        /* Steps list */
+        .steps-list {
+            list-style: none;
+            margin-bottom: 25px;
+        }
+
+        .steps-list li {
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .steps-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: #0275d8;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 24px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        /* Call to Action Button */
+        .cta-btn {
+            display: inline-block;
+            background-color: #0275d8;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 30px;
+            font-weight: 600;
+            border-radius: 4px;
+            transition: background-color 0.2s ease;
+            margin-top: 15px;
+        }
+
+        .cta-btn:hover {
+            background-color: #015bb0;
+        }
+
+        /* Sidebar Deadline Card */
+        .deadline-card {
+            background-color: #ffffff;
+            border-left: 4px solid #0275d8;
+            padding: 20px;
+            border-radius: 0 4px 4px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .deadline-item {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eef0f2;
+        }
+
+        .deadline-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .deadline-date {
+            font-weight: 700;
+            color: #0275d8;
+        }
+
+        /* Footer matching the homepage footer */
+        footer {
+            background-color: #111c24;
+            color: #a0aab2;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <header class="brand-header">
+        <div class="logo-placeholder">R</div>
+        <h1 class="college-title">Winne International Engineering College</h1>
+    </header>
+
+    
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="academics.html">Academics</a>
+        <a href="admissions.html" class="active">Admissions</a>
+        <a href="departments.html">Departments</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    
+    <main class="container">
+        <h2 class="page-title">Admissions Process</h2>
+        <p class="intro-text">Join a community of innovators, thinkers, and problem solvers. Explore our application criteria and step-by-step submission process below to begin your journey at Winne International Engineering College.</p>
+
+        <div class="admissions-layout">
+            
+            <section class="main-info">
+                <h3>How to Apply</h3>
+                <ul class="steps-list">
+                    <li><strong>Submit Your Application:</strong> Complete the online registration form and pay the application fee.</li>
+                    <li><strong>Upload Academic Records:</strong> Provide official high school transcripts or certified diploma equivalents.</li>
+                    <li><strong>Standardized Testing & English Proficiency:</strong> Submit valid SAT/ACT scores along with TOEFL/IELTS benchmarks if applicable.</li>
+                    <li><strong>Letters of Recommendation:</strong> Include two evaluations from math or science educators detailing your technical aptitude.</li>
+                </ul>
+
+                <h3>Admission Requirements</h3>
+                <p>Applicants must show solid academic foundations, particularly in mathematics (Calculus preferred) and basic sciences (Physics and Chemistry). A minimum GPA of 3.0 or equivalent global standard is highly recommended for competitive eligibility.</p>
+                
+                <a href="#" class="cta-btn">Start Online Application</a>
+            </section>
+
+           
+            <aside class="sidebar-info">
+                <div class="deadline-card">
+                    <h3>Key Dates & Deadlines</h3>
+                    
+                    <div class="deadline-item">
+                        <p><strong>Early Action:</strong></p>
+                        <p class="deadline-date">November 1</p>
+                    </div>
+                    
+                    <div class="deadline-item">
+                        <p><strong>Regular Decision:</strong></p>
+                        <p class="deadline-date">January 15</p>
+                    </div>
+
+                    <div class="deadline-item">
+                        <p><strong>Financial Aid Deadline:</strong></p>
+                        <p class="deadline-date">February 15</p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+ 
+    <footer>
+        &copy; 2026 Winne. All rights reserved.
+    </footer>
+
+</body>
+</html>
